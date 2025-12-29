@@ -17,10 +17,10 @@ With a strong foundation in **Solace PubSub+** event broker ecosystems, I've dev
 
 ---
 
-{% assign personal_data = site.data.personal %}
-{% include category-section.html id="personal" category="personal" data=personal_data %}
+{% assign academic_data = site.data.academic %}
+{% include category-section.html id="academic" category="academic" data=academic_data %}
 
 ---
 
-{% assign academic_data = site.data.academic %}
-{% include category-section.html id="academic" category="academic" data=academic_data %}
+{% assign personal_data = site.data.personal %}
+{% include category-section.html id="personal" category="personal" data=personal_data %}
