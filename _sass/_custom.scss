@@ -1,0 +1,274 @@
+// Custom styles for project cards and layout
+
+// Color variables (extending Hacker theme)
+$bg-primary: #0d1117;
+$bg-secondary: #161b22;
+$text-primary: #c9d1d9;
+$text-muted: #8b949e;
+$border-dim: #30363d;
+$accent-green: #39d353;
+$accent-blue: #58a6ff;
+$accent-yellow: #f2cc60;
+$accent-red: #f85149;
+
+// Project card styling
+.project-card {
+  background: $bg-secondary;
+  border: 1px solid $border-dim;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $accent-green;
+    transform: translateY(-2px);
+  }
+
+  &.featured {
+    border-left: 3px solid $accent-green;
+  }
+}
+
+// Project header
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-name {
+  margin: 0;
+  font-size: 1.3rem;
+  color: $text-primary;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+
+  .prompt {
+    color: $accent-green;
+  }
+}
+
+// Project description
+.project-description {
+  color: $text-muted;
+  margin: 0.75rem 0;
+  line-height: 1.6;
+}
+
+// Tech stack tags
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: rgba(88, 166, 255, 0.1);
+  border: 1px solid $accent-blue;
+  color: $accent-blue;
+  padding: 0.25rem 0.75rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+}
+
+// Status badges
+.status-badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+
+  &.status-production {
+    background: rgba(57, 211, 83, 0.2);
+    color: $accent-green;
+    border: 1px solid $accent-green;
+  }
+
+  &.status-beta {
+    background: rgba(242, 204, 96, 0.2);
+    color: $accent-yellow;
+    border: 1px solid $accent-yellow;
+  }
+
+  &.status-poc {
+    background: rgba(88, 166, 255, 0.2);
+    color: $accent-blue;
+    border: 1px solid $accent-blue;
+  }
+
+  &.status-archived {
+    background: rgba(139, 148, 158, 0.2);
+    color: $text-muted;
+    border: 1px solid $text-muted;
+  }
+}
+
+// Project links
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid $border-dim;
+  color: $accent-blue;
+  text-decoration: none;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border-radius: 3px;
+
+  &:hover {
+    border-color: $accent-blue;
+    background: rgba(88, 166, 255, 0.1);
+    text-decoration: none;
+  }
+
+  .prompt {
+    color: $accent-green;
+    margin-right: 0.3rem;
+  }
+}
+
+// Featured projects grid
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+// Category section
+.category-section {
+  margin: 3rem 0;
+}
+
+// Collapsible section
+.collapsible-section {
+  margin-top: 2rem;
+}
+
+.collapsible-toggle {
+  background: transparent;
+  border: 1px solid $border-dim;
+  color: $text-primary;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: all 0.2s ease;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    border-color: $accent-green;
+    background: rgba(57, 211, 83, 0.05);
+  }
+
+  .prompt {
+    color: $accent-green;
+  }
+
+  .toggle-icon {
+    color: $accent-green;
+    font-size: 0.8rem;
+    transition: transform 0.2s ease;
+  }
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+
+  &.expanded {
+    max-height: 5000px;
+  }
+}
+
+// Compact project list (for collapsible sections)
+.compact-project-list {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: $bg-secondary;
+  border: 1px solid $border-dim;
+  border-radius: 3px;
+}
+
+.compact-project-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid $border-dim;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  a {
+    color: $accent-blue;
+    text-decoration: none;
+    font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .compact-desc {
+    color: $text-muted;
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+  }
+}
+
+// Hero section
+.hero {
+  text-align: center;
+  padding: 2rem 0 3rem 0;
+  border-bottom: 2px solid $border-dim;
+  margin-bottom: 3rem;
+}
+
+// Footer styling
+footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 2px solid $border-dim;
+  text-align: center;
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  a {
+    color: $accent-blue;
+    text-decoration: none;
+    font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

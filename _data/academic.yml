@@ -1,0 +1,14 @@
+# Academic Projects (OMSA & Coursework)
+- name: "ccheck10-final"
+  description: "Construction Check Team 10 Practicum - Predictive model for early-stage construction costs using H2O AutoML, Streamlit dashboard, and agentic AI framework"
+  tech_stack: [Python, H2O AutoML, Streamlit, XGBoost, Jupyter, FRED API, Google Maps API]
+  github_url: "https://github.com/rnatara/ccheck10-final"
+  status: "production"
+  year: 2024
+
+- name: "coursera-ds-uic-har-data-analysis"
+  description: "Coursera Data Science project analyzing Samsung wearable dataset for Human Activity Recognition using R and Python"
+  tech_stack: [R, Python, Data Analysis]
+  github_url: "https://github.com/rnatara/coursera-ds-uic-har-data-analysis"
+  status: "archived"
+  year: 2022

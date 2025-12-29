@@ -1,0 +1,47 @@
+<section class="category-section" id="{{ include.id }}">
+  <h2 class="section-header">
+    <span class="prompt">$</span> ls ~/projects/{{ include.category }}
+  </h2>
+
+  <!-- Featured projects grid -->
+  {% if include.data.featured %}
+  <div class="featured-grid">
+    {% for project in include.data.featured %}
+      {% include project-card.html project=project featured=true %}
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Collapsible all projects section -->
+  {% if include.data.all_projects %}
+  <div class="collapsible-section">
+    <button class="collapsible-toggle" data-target="{{ include.id }}-all" aria-expanded="false">
+      <span>
+        <span class="prompt">&gt;</span> Show all {{ include.category }} projects
+        ({{ include.data.all_projects.size }} more)
+      </span>
+      <span class="toggle-icon">▼</span>
+    </button>
+
+    <div class="collapsible-content" id="{{ include.id }}-all">
+      <div class="compact-project-list">
+        {% for project in include.data.all_projects %}
+        <div class="compact-project-item">
+          <a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">{{ project.name }}</a>
+          <span class="compact-desc">{{ project.description }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- If no featured/all_projects structure, just show all projects -->
+  {% if include.data.featured == nil and include.data.all_projects == nil %}
+  <div class="featured-grid">
+    {% for project in include.data %}
+      {% include project-card.html project=project featured=false %}
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>

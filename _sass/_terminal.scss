@@ -1,0 +1,85 @@
+// Terminal-inspired styling elements
+
+// ASCII art header
+.ascii-header {
+  font-family: 'Courier New', 'Courier', monospace;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  color: #39d353;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+// Terminal prompt prefix
+.prompt {
+  color: #39d353;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  user-select: none;
+}
+
+// Blinking cursor effect
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.2em;
+  background-color: #39d353;
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+// Section headers with command prompt styling
+.section-header {
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  color: #c9d1d9;
+  border-bottom: 2px solid #30363d;
+  padding-bottom: 0.5rem;
+  margin: 3rem 0 1.5rem 0;
+  font-size: 1.5rem;
+
+  .prompt {
+    color: #39d353;
+  }
+}
+
+// Tagline styling
+.tagline {
+  font-size: 1.1rem;
+  color: #8b949e;
+  margin: 1rem 0 2rem 0;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+
+  .prompt {
+    color: #39d353;
+  }
+}
+
+// Command-style buttons
+.btn-command {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid #30363d;
+  color: #58a6ff;
+  text-decoration: none;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: #58a6ff;
+    background: rgba(88, 166, 255, 0.1);
+  }
+
+  .prompt {
+    color: #39d353;
+  }
+}

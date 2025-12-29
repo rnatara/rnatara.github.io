@@ -1,0 +1,31 @@
+<footer>
+  <h2 class="section-header">
+    <span class="prompt">$</span> cat ~/contact.txt
+  </h2>
+
+  <p>Let's connect and build something great together.</p>
+
+  <div class="footer-links">
+    {% if site.social.github %}
+    <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener noreferrer">
+      <span class="prompt">></span> GitHub
+    </a>
+    {% endif %}
+
+    {% if site.social.linkedin %}
+    <a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer">
+      <span class="prompt">></span> LinkedIn
+    </a>
+    {% endif %}
+
+    {% if site.email %}
+    <a href="mailto:{{ site.email }}">
+      <span class="prompt">></span> Email
+    </a>
+    {% endif %}
+  </div>
+
+  <p style="margin-top: 2rem; color: #8b949e; font-size: 0.9rem;">
+    © {{ 'now' | date: "%Y" }} {{ site.author }}. Built with Jekyll and hosted on GitHub Pages.
+  </p>
+</footer>
