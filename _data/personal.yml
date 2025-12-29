@@ -1,8 +1,9 @@
 # Personal Development Projects
-- name: "patra-paha"
-  description: "Progressive Web App for quickly accessing personal document and media files from Google Drive with offline support and multiple language rendering."
-  tech_stack: [React, TypeScript, Vite, Chakra UI, Google Drive API, IndexedDB, PWA]
-  github_url: "https://github.com/nram-dev/patra-paha"
-  live_url: "https://patra-paha.vercel.app/"
-  status: "beta"
-  year: 2024
+all_projects:
+  - name: "patra-paha"
+    description: "Progressive Web App for quickly accessing personal document and media files from Google Drive with offline support and multiple language rendering."
+    tech_stack: [React, TypeScript, Vite, Chakra UI, Google Drive API, IndexedDB, PWA]
+    github_url: "https://github.com/nram-dev/patra-paha"
+    live_url: "https://patra-paha.vercel.app/"
+    status: "beta"
+    year: 2024

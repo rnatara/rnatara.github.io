@@ -8,6 +8,22 @@ featured:
     status: "production"
     year: 2024
 
+  - name: "solace-php-smf"
+    description: "PHP client examples using Solace SMF (Solace Message Format) protocol"
+    tech_stack: [PHP, Solace SMF]
+    github_url: "https://github.com/nram-solace/solace-php-smf"
+    status: "poc"
+    year: 2022
+
+  - name: "azure-pipeline-poc"
+    description: "Proof-of-concept for Azure Pipeline integration with Solace broker provisioning"
+    tech_stack: [Azure Pipelines, YAML, Solace]
+    github_url: "https://github.com/nram-solace/azure-pipeline-poc"
+    status: "poc"
+    year: 2023
+
+# All other Solace/Work projects
+all_projects:
   - name: "SolaceQueueBrowserGui"
     description: "Java Swing desktop GUI for browsing Solace queues with message inspection capabilities"
     tech_stack: [Java, Maven, Swing, Solace Java API]
@@ -22,13 +38,6 @@ featured:
     status: "poc"
     year: 2023
 
-  - name: "solace-php-smf"
-    description: "PHP client examples using Solace SMF (Solace Message Format) protocol"
-    tech_stack: [PHP, Solace SMF]
-    github_url: "https://github.com/nram-solace/solace-php-smf"
-    status: "poc"
-    year: 2022
-
   - name: "solace-php-mqtt"
     description: "PHP MQTT client examples for Solace PubSub+ broker"
     tech_stack: [PHP, MQTT, Solace]
@@ -36,15 +45,6 @@ featured:
     status: "poc"
     year: 2022
 
-  - name: "azure-pipeline-poc"
-    description: "Proof-of-concept for Azure Pipeline integration with Solace broker provisioning"
-    tech_stack: [Azure Pipelines, YAML, Solace]
-    github_url: "https://github.com/nram-solace/azure-pipeline-poc"
-    status: "poc"
-    year: 2023
-
-# All other Solace/Work projects
-all_projects:
   - name: "solace-agent-mesh-v0"
     description: "Open-source framework for building event-driven multi-agent AI systems with Solace event broker integration"
     tech_stack: [Python, Solace, LangChain, FastAPI, React]
