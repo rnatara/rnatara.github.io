@@ -15,6 +15,27 @@ featured:
     status: "archived"
     year: 2022
 
+  - name: "partitioned-queue-demo"
+    description: "Demo showcasing Solace partitioned queue functionality with configuration examples"
+    tech_stack: [Node.js, Solace, JSON Config]
+    github_url: "https://github.com/nram-solace/partitioned-queue-demo"
+    status: "poc"
+    year: 2023
+
+  - name: "solace-php-smf"
+    description: "PHP client examples using Solace SMF (Solace Message Format) protocol"
+    tech_stack: [PHP, Solace SMF]
+    github_url: "https://github.com/nram-solace/solace-php-smf"
+    status: "poc"
+    year: 2022
+
+  - name: "solace-php-mqtt"
+    description: "PHP MQTT client examples for Solace PubSub+ broker"
+    tech_stack: [PHP, MQTT, Solace]
+    github_url: "https://github.com/nram-solace/solace-php-mqtt"
+    status: "poc"
+    year: 2022
+
 # All other Solace/Work projects
 all_projects:
   - name: "solace-agent-mesh-v0"
@@ -38,75 +59,12 @@ all_projects:
     status: "production"
     year: 2024
 
-  - name: "nt-solace-automation-v2"
-    description: "Python-based automation tool for provisioning Solace PubSub+ infrastructure via SEMPv2 API with GitHub Actions integration"
-    tech_stack: [Python, SEMPv2, GitHub Actions]
-    github_url: "https://github.com/nram-solace/nt-solace-automation-v2"
-    status: "production"
-    year: 2024
-
-  - name: "nt-solace-infra-mgmt"
-    description: "Ansible-based infrastructure management for Solace brokers with VPN configuration and delta management"
-    tech_stack: [Ansible, Python, SEMPv2]
-    github_url: "https://github.com/nram-solace/nt-solace-infra-mgmt"
-    status: "production"
-    year: 2023
-
   - name: "solace-prometheus-exporter-demo"
     description: "Demo showcasing Prometheus exporter for Solace PubSub+ metrics with Grafana dashboards"
     tech_stack: [Prometheus, Grafana, Solace, Docker]
     github_url: "https://github.com/nram-solace/solace-prometheus-exporter-demo"
     status: "poc"
     year: 2023
-
-  - name: "jpmc-solace-cicd-tools"
-    description: "CI/CD automation tools for JPMC Solace infrastructure with DMR provisioning via Postman and SEMP"
-    tech_stack: [Python, Postman, SEMPv2, Terraform]
-    github_url: "https://github.com/nram-solace/jpmc-solace-cicd-tools"
-    status: "production"
-    year: 2023
-
-  - name: "staples-cicd-tools"
-    description: "Staples-specific CI/CD tooling for Solace broker management and configuration automation"
-    tech_stack: [Python, Shell, SEMPv2]
-    github_url: "https://github.com/nram-solace/staples-cicd-tools"
-    status: "production"
-    year: 2023
-
-  - name: "staples-connector-mgmt-tools"
-    description: "Microgateway and connector management tools for Staples Solace deployment"
-    tech_stack: [Python, Shell, systemctl]
-    github_url: "https://github.com/nram-solace/staples-connector-mgmt-tools"
-    status: "production"
-    year: 2023
-
-  - name: "aapl-semp-tools"
-    description: "SEMPv2 tools for Apple deployment including bulk message operations (move, copy, delete from queues)"
-    tech_stack: [Python, SEMPv2, Solace]
-    github_url: "https://github.com/nram-solace/aapl-semp-tools"
-    status: "production"
-    year: 2023
-
-  - name: "aapl-nodejs-tools"
-    description: "Node.js utilities for Apple Solace deployment automation and management"
-    tech_stack: [Node.js, JavaScript, Solace]
-    github_url: "https://github.com/nram-solace/aapl-nodejs-tools"
-    status: "production"
-    year: 2023
-
-  - name: "iff-sempv2-tools"
-    description: "SEMPv2 tools for IFF deployment with VPN, queue, and JNDI configuration templates"
-    tech_stack: [Python, SEMPv2, JSON Templates]
-    github_url: "https://github.com/nram-solace/iff-sempv2-tools"
-    status: "production"
-    year: 2022
-
-  - name: "cibc-sempv2-tools"
-    description: "SEMPv2 tools for CIBC deployment with configurable VPN and queue provisioning templates"
-    tech_stack: [Python, SEMPv2, JSON]
-    github_url: "https://github.com/nram-solace/cibc-sempv2-tools"
-    status: "production"
-    year: 2022
 
   - name: "solace-service-mgmt-sempv2"
     description: "Service management tool for Solace brokers using SEMPv2 API with configuration limits"
@@ -133,13 +91,6 @@ all_projects:
     description: "Demonstration of Solace topic-to-queue mapping and subscription patterns"
     tech_stack: [Node.js, Solace]
     github_url: "https://github.com/nram-solace/topic-queue-demo"
-    status: "poc"
-    year: 2023
-
-  - name: "partitioned-queue-demo"
-    description: "Demo showcasing Solace partitioned queue functionality with configuration examples"
-    tech_stack: [Node.js, Solace, JSON Config]
-    github_url: "https://github.com/nram-solace/partitioned-queue-demo"
     status: "poc"
     year: 2023
 
@@ -171,13 +122,6 @@ all_projects:
     status: "poc"
     year: 2023
 
-  - name: "GuitarCenter-REST-GW-PoC"
-    description: "REST Gateway proof-of-concept for Guitar Center Solace integration"
-    tech_stack: [Solace REST, Postman, SEMPv2]
-    github_url: "https://github.com/nram-solace/GuitarCenter-REST-GW-PoC"
-    status: "poc"
-    year: 2022
-
   - name: "create-dmr-cluster"
     description: "Scripts and automation for creating DMR (Dynamic Message Routing) clusters in Solace"
     tech_stack: [Python, Shell, SEMPv2]
@@ -191,24 +135,3 @@ all_projects:
     github_url: "https://github.com/nram-solace/simple-rest-server"
     status: "poc"
     year: 2022
-
-  - name: "solace-php-smf"
-    description: "PHP client examples using Solace SMF (Solace Message Format) protocol"
-    tech_stack: [PHP, Solace SMF]
-    github_url: "https://github.com/nram-solace/solace-php-smf"
-    status: "poc"
-    year: 2022
-
-  - name: "solace-php-mqtt"
-    description: "PHP MQTT client examples for Solace PubSub+ broker"
-    tech_stack: [PHP, MQTT, Solace]
-    github_url: "https://github.com/nram-solace/solace-php-mqtt"
-    status: "poc"
-    year: 2022
-
-  - name: "nt-adaptris-tools"
-    description: "Tools for managing Adaptris integration with Northern Trust Solace deployment"
-    tech_stack: [Python, Adaptris, Solace]
-    github_url: "https://github.com/nram-solace/nt-adaptris-tools"
-    status: "production"
-    year: 2023
