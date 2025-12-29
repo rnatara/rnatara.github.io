@@ -8,6 +8,15 @@ featured:
     status: "production"
     year: 2024
 
+  - name: "SolaceQueueBrowserGui"
+    description: "Java Swing desktop GUI for browsing Solace queues with message inspection capabilities"
+    tech_stack: [Java, Maven, Swing, Solace Java API]
+    github_url: "https://github.com/nram-solace/SolaceQueueBrowserGui"
+    status: "archived"
+    year: 2022
+
+# All other Solace/Work projects
+all_projects:
   - name: "solace-agent-mesh-v0"
     description: "Open-source framework for building event-driven multi-agent AI systems with Solace event broker integration"
     tech_stack: [Python, Solace, LangChain, FastAPI, React]
@@ -29,8 +38,6 @@ featured:
     status: "production"
     year: 2024
 
-# All other Solace/Work projects
-all_projects:
   - name: "nt-solace-automation-v2"
     description: "Python-based automation tool for provisioning Solace PubSub+ infrastructure via SEMPv2 API with GitHub Actions integration"
     tech_stack: [Python, SEMPv2, GitHub Actions]
@@ -44,13 +51,6 @@ all_projects:
     github_url: "https://github.com/nram-solace/nt-solace-infra-mgmt"
     status: "production"
     year: 2023
-
-  - name: "SolaceQueueBrowserGui"
-    description: "Java Swing desktop GUI for browsing Solace queues with message inspection capabilities"
-    tech_stack: [Java, Maven, Swing, Solace Java API]
-    github_url: "https://github.com/nram-solace/SolaceQueueBrowserGui"
-    status: "archived"
-    year: 2022
 
   - name: "solace-prometheus-exporter-demo"
     description: "Demo showcasing Prometheus exporter for Solace PubSub+ metrics with Grafana dashboards"
