@@ -12,7 +12,7 @@ featured:
     description: "Java Swing desktop GUI for browsing Solace queues with message inspection capabilities"
     tech_stack: [Java, Maven, Swing, Solace Java API]
     github_url: "https://github.com/nram-solace/SolaceQueueBrowserGui"
-    status: "archived"
+    status: "production"
     year: 2022
 
   - name: "partitioned-queue-demo"
@@ -35,6 +35,13 @@ featured:
     github_url: "https://github.com/nram-solace/solace-php-mqtt"
     status: "poc"
     year: 2022
+
+  - name: "azure-pipeline-poc"
+    description: "Proof-of-concept for Azure Pipeline integration with Solace broker provisioning"
+    tech_stack: [Azure Pipelines, YAML, Solace]
+    github_url: "https://github.com/nram-solace/azure-pipeline-poc"
+    status: "poc"
+    year: 2023
 
 # All other Solace/Work projects
 all_projects:
@@ -107,13 +114,6 @@ all_projects:
     github_url: "https://github.com/nram-solace/simple-solace-automation"
     status: "poc"
     year: 2022
-
-  - name: "azure-pipeline-poc"
-    description: "Proof-of-concept for Azure Pipeline integration with Solace broker provisioning"
-    tech_stack: [Azure Pipelines, YAML, Solace]
-    github_url: "https://github.com/nram-solace/azure-pipeline-poc"
-    status: "poc"
-    year: 2023
 
   - name: "solace-github-action-poc"
     description: "GitHub Actions proof-of-concept for Solace broker automation workflows"

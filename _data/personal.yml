@@ -4,13 +4,5 @@
   tech_stack: [React, TypeScript, Vite, Chakra UI, Google Drive API, IndexedDB, PWA]
   github_url: "https://github.com/nram-dev/patra-paha"
   live_url: "https://patra-paha.vercel.app/"
-  status: "production"
-  year: 2024
-
-- name: "v0-nram-devlab"
-  description: "Auto-synced development lab project from v0.dev AI-assisted platform deployed on Vercel"
-  tech_stack: [React, Node.js, Vercel, v0.dev]
-  github_url: "https://github.com/nram-dev/v0-nram-devlab"
-  live_url: "https://vercel.com/nram-9984s-projects/v0-nram-devlab"
   status: "beta"
   year: 2024
